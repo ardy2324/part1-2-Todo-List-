@@ -21,3 +21,4 @@ Route::get('todo', function () {
 
 Route::get('todo', 'TodoController@index');
 Route::POST('todo', 'TodoController@store');
+Route::delete('/todo/{td}', 'TodoController@destroy');
